@@ -68,7 +68,10 @@ public class HomePage extends WebPage {
     		fruitsList.add("Banana");
 //    		dropDownChoice = new DropDownChoice<String>("fruits", Model.of(""),fruitsList);
 //    		add(dropDownChoice);	
-    		add(new DropDownChoice<String>("fruits",compoundPropertyModel.bind("selectedFruit"), fruitsList));
+    		dropDownChoice = new DropDownChoice<String>("fruits", compoundPropertyModel.bind("selectedFruit"),fruitsList);
+//    		dropDownChoice.add(new FormComponentUpdatingBehavior());
+    		add(dropDownChoice);
+//    		add(new DropDownChoice<String>("fruits",compoundPropertyModel.bind("selectedFruit"), fruitsList));
     	}
 
     	public final void onSubmit() {
