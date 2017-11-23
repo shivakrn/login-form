@@ -64,19 +64,19 @@ public class HomePage extends WebPage {
     		add(new TextField("username"));
     		add(new PasswordTextField("password"));			
     		add(new Label("loginStatus"));
-    		fruitsList.add("Apple");
+/*    		fruitsList.add("Apple");
     		fruitsList.add("Banana");
-//    		dropDownChoice = new DropDownChoice<String>("fruits", Model.of(""),fruitsList);
+*///    		dropDownChoice = new DropDownChoice<String>("fruits", Model.of(""),fruitsList);
 //    		add(dropDownChoice);	
-    		dropDownChoice = new DropDownChoice<String>("fruits", compoundPropertyModel.bind("selectedFruit"),fruitsList);
+/*    		dropDownChoice = new DropDownChoice<String>("fruits", compoundPropertyModel.bind("selectedFruit"),fruitsList);*/
 //    		dropDownChoice.add(new FormComponentUpdatingBehavior());
-    		add(dropDownChoice);
+    		/*add(dropDownChoice);*/
 //    		add(new DropDownChoice<String>("fruits",compoundPropertyModel.bind("selectedFruit"), fruitsList));
     	}
 
     	public final void onSubmit() {
 //    		System.out.println("Select fruit--- "+dropDownChoice.getDefaultModelObjectAsString());
-    		System.out.println(user.getSelectedFruit());
+//    		System.out.println(user.getSelectedFruit());
     		if(user.getUserName().equals("test") && user.getPassword().equals("test"))
     		     user.setLoginStatus("Congratulations!");
     		else
